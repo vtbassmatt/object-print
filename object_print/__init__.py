@@ -39,16 +39,16 @@ def _tree_recurse(obj, indent, prefix='', suffix=''):
             print(spaces + prefix + f"?? {obj} ??" + suffix)
 
 
-def tree_print(root):
+def object_print(root):
     _tree_recurse(root, 0)
 
 
 if __name__ == '__main__':
-    tree_print({'a': 1, 'b': 2})
-    tree_print([1, 2, 3])
-    tree_print(1)
+    object_print({'a': 1, 'b': 2})
+    object_print([1, 2, 3])
+    object_print(1)
 
-    tree_print([
+    object_print([
         'a',
         {
             'foo': 'bar',
